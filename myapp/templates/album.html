@@ -1,0 +1,106 @@
+{% extends 'header&footer.html' %}
+{% load static %}
+{% block content %}
+<!--gallery-->
+	<div class="gallery">
+		<div class="container">
+			<h3>My Albums</h3>
+			<section>
+				<ul id="da-thumbs" class="da-thumbs">
+					<li>
+						<a href="{% static 'images/a1.jpg' %}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="{% static 'images/a1.jpg' %}" alt="" />
+							<div>
+								<h5>Music</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="{% static 'images/a2.jpg' %}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="{% static 'images/a2.jpg' %}" alt="" />
+							<div>
+								<h5>Music</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="{% static 'images/a3.jpg' %}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="{% static 'images/a3.jpg' %}" alt="" />
+							<div>
+								<h5>Music</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="{% static 'images/a4.jpg' %}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="{% static 'images/a4.jpg' %}" alt="" />
+							<div>
+								<h5>Music</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>	
+						<a href="{% static 'images/a5.jpg' %}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<div>
+								<h5>Music</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<img src="{% static 'images/a6.jpg' %}" alt="" />
+						<div>
+							<img src="{% static 'images/a5.jpg' %}" alt="" />
+							<h5>Music</h5>
+							<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<img src="{% static 'images/a7.jpg' %}" alt="" />
+					<a href="{% static 'images/a6.jpg' %}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<div>
+							<h5>Music</h5>
+							<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="{% static 'images/a8.jpg' %}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<a href="{% static 'images/a7.jpg' %}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="{% static 'images/a8.jpg' %}" alt="" />
+							<div>
+								<h5>Music</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="{% static 'images/a9.jpg' %}" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="{% static 'images/a9.jpg' %}" alt="" />
+							<div>
+								<h5>Music</h5>
+								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
+							</div>
+						</a>
+					</li>
+					<div class="clearfix"> </div>
+				</ul>
+			</section>
+			<script type="text/javascript" src="{% static 'js/jquery.hoverdir.js' %}"></script>	
+		<script type="text/javascript">
+			$(function() {
+			
+				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+			});
+		</script>
+        </div>
+		
+	</div>
+<!--//gallery-->
+{% endblock %}
